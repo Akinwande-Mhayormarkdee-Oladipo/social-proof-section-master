@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.container {
+  width: 60%;
+}
+
+.top-section {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.htext {
+  width: 50%;
+  text-align: left;
+  color: hsl(300, 43%, 22%);
+  margin: 0;
+}
+.htext h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  width: 60%;
+  margin-bottom: 3rem;
+}
+.htext p {
+  width: 70%;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.2rem;
+}
+
+.ratings-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.ratings-wrapper .ratings {
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1.5rem;
+  padding-left: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  width: 75%;
+}
+.ratings-wrapper .ratings svg {
+  margin-left: 0.2rem;
+}
+.ratings-wrapper .ratings h4 {
+  font-size: 1.2rem;
+  margin-left: 1.8rem;
+}
+
+.ratings-2 {
+  align-self: center;
+}
+
+.ratings-3 {
+  align-self: flex-end;
+}
+
+.client-wrapper {
+  display: flex;
+  gap: 2rem;
+  height: 25vh;
+}
+.client-wrapper .client {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 2rem 2rem 2rem;
+}
+.client-wrapper .client .client-top-profile {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.client-wrapper .client .client-top-profile img {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+.client-wrapper .client .client-top-profile p {
+  margin-top: 0.3rem;
+  color: hsl(333, 80%, 67%);
+}
+.client-wrapper .client .client-review {
+  line-height: 1.7rem;
+  font-size: 1.2rem;
+}
+
+.client-1 {
+  align-self: flex-start;
+}
+
+.client-2 {
+  align-self: center;
+}
+
+.client-3 {
+  align-self: flex-end;
+}
+
+@media only screen and (min-width: 968px) and (max-width: 2000px) {
+  .body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    width: 60%;
+  }
+  .top-section {
+    margin-top: 7rem;
+    padding-top: 3rem;
+  }
+  .htext {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 0;
+  }
+  .htext h1 {
+    width: 70%;
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  .htext p {
+    width: 80%;
+    font-size: 1.5rem;
+    color: hsl(303, 10%, 53%);
+  }
+  .ratings {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+  .ratings .star-icon svg {
+    font-size: 5px;
+  }
+  .ratings h4 {
+    font-size: 0.5rem;
+    margin-left: 0.1rem;
+    font-weight: 600;
+  }
+  .client-wrapper {
+    height: auto;
+  }
+  .client-2 {
+    align-self: center;
+  }
+}
+@media only screen and (max-width: 968px) {
+  body {
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .container {
+    width: 100%;
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  section {
+    flex-direction: column;
+    text-align: center;
+  }
+  .top-section {
+    margin-bottom: 2rem;
+  }
+  .htext {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  .htext h1 {
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    letter-spacing: -0.1rem;
+  }
+  .htext p {
+    width: 100%;
+  }
+  .ratings-wrapper {
+    width: 100%;
+    align-items: center;
+  }
+  .ratings-wrapper .ratings {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .ratings-wrapper .ratings .star-icon {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  .client-wrapper {
+    height: 30%;
+  }
+  .client-wrapper .client {
+    width: 100%;
+  }
+  .client-wrapper .client-review {
+    width: 100%;
+    text-align: left;
+  }
+  .attribution {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+}/*# sourceMappingURL=style.css.map */
